@@ -21,6 +21,8 @@ class CategoryTableViewCell: UITableViewCell {
             leadingConstraint.constant = 40
         case 2:
             leadingConstraint.constant = 60
+        case 3:
+            leadingConstraint.constant = 80
         default:
             leadingConstraint.constant = 20
         }

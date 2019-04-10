@@ -8,10 +8,15 @@
 
 import Foundation
 
-struct GoodsCategory {
+struct GoodsCategory: Equatable {
+    var id: Int
     var title: String
     var hasChilden: Bool
     var isExpanded: Bool
     var childrenCategories: [GoodsCategory]
     var level: Int
+    
+    static func == (lhs: GoodsCategory, rhs: GoodsCategory) -> Bool {
+        return lhs.id == rhs.id ? true : false
+    }
 }
